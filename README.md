@@ -55,7 +55,7 @@ Al ejecutar los métodos, el método Xgboost, es el que logra clasificar el mode
 
 <div style="text-align:center">
   <img src="https://github.com/marcelamu9/modelo_predictivo_fuga_colombina/blob/main/img/boxplot_metricas_clasificacion.png" width="800" title="Métricas de clasificación">
-  <img src="./img/prueba_tecnica_colombina/img/boxplot_tiempos_modelos.png" width="800" title="Tiempos de modelos">
+  <img src="https://github.com/marcelamu9/modelo_predictivo_fuga_colombina/blob/main/img/boxplot_tiempos_modelos.png" width="800" title="Tiempos de modelos">
 </div>
 
 Al realizar las métricas en los datos de entrenamiento y prueba se encontró que las métricas de precisión y recall son muy buenas en los datos de entrenamiento, sin embargo la precisión no es tan buena en los datos de prueba, la idea en los futuros modelos será aumentar la precisión para identificar correctamente los clientes fugados.
@@ -63,7 +63,7 @@ Al realizar las métricas en los datos de entrenamiento y prueba se encontró qu
 Se realizó el gráfico para medir la importancia de las variables en el modelo, donde se tiene que la variable longitud es la más importante para el modelo y las otras variables tienen poco peso, así que es conveniente en una próximo modelo evaluar otras variables o descartar algunas de las variables ya incluidas.
 
 <div style="text-align:center">
-  <img src="./prueba_tecnica_colombina/img/importancia_variables.png" width="800" title="importancia variables">
+  <img src="https://github.com/marcelamu9/modelo_predictivo_fuga_colombina/blob/main/img/importancia_variables.png" width="800" title="importancia variables">
 </div>
 <br>
 
