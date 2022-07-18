@@ -54,8 +54,8 @@ Para tener menor sesgos en las estimaciones se probó cada método con la valida
 Al ejecutar los métodos, el método Xgboost, es el que logra clasificar el modelo de mejor manera, ya que tanto el recall y la precisión son altos, ademas viendo las gráfica de las métricas de clasificación son mejores comparados con los demás modelos. En el tiempo de ajuste del estimador si es un poco más alto con respecto a los demás, sin embargo la diferencia no es tan grande. También se ejecuto el método SVM, sin embargo sus tiempos de ejecución eran muy altos y las métricas no eran muy buenas.
 
 <div style="text-align:center">
-  <img src="./img/../prueba_tecnica_colombina/img/boxplot_metricas_clasificacion.png" width="800" title="Métricas de clasificación">
-  <img src="./img/../prueba_tecnica_colombina/img/boxplot_tiempos_modelos.png" width="800" title="Tiempos de modelos">
+  <img src="./img/prueba_tecnica_colombina/img/boxplot_metricas_clasificacion.png" width="800" title="Métricas de clasificación">
+  <img src="./img/prueba_tecnica_colombina/img/boxplot_tiempos_modelos.png" width="800" title="Tiempos de modelos">
 </div>
 
 Al realizar las métricas en los datos de entrenamiento y prueba se encontró que las métricas de precisión y recall son muy buenas en los datos de entrenamiento, sin embargo la precisión no es tan buena en los datos de prueba, la idea en los futuros modelos será aumentar la precisión para identificar correctamente los clientes fugados.
