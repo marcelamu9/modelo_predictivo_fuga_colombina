@@ -1,6 +1,6 @@
-# Modelo predictivo de fuga Colombina
+# Modelo predictivo de fuga de clientes
 
-En este repositorio se realiza un modelo predictivo de fuga de clientes desde la modificación y la depuración de los datos. El objetivo es predecir los clientes que tienen mayor probabilidad de no volver a comprar ninguno de los productos. Colombina ha establecido que un cliente que no compra durante los últimos dos meses es un cliente fugado.
+En este repositorio se realiza un modelo predictivo de fuga de clientes desde la modificación y la depuración de los datos. El objetivo es predecir los clientes que tienen mayor probabilidad de no volver a comprar ninguno de los productos. El negocio ha establecido que un cliente que no compra durante los últimos dos meses es un cliente fugado.
 
 Para la generación del modelo se crearon las variables:
 
@@ -31,15 +31,15 @@ Analizando la variable de respuesta, se encontró que esta desbalanceada. El 13%
     <td>13%</td>
   </tr>
   <tr>
-    <td>No fugaods</td>
+    <td>No fugados</td>
     <td>69,631</td>
     <td>87%</td>
   </tr>
 </table>
 
-Por ende se aplico el método SMOTE para datos desbalanceados. COn el fin de que se amplie la cantidad de datos de clientes fugados.
+Por ende se aplicó el método SMOTE para datos desbalanceados, con el fin de que se amplíe la cantidad de datos de clientes fugados.
 
-# Generacion del modelo de fuga
+# Generación del modelo de fuga
 
 Para la generación del modelo predictivo de fuga, se prueban los siguientes métodos:
 * Regresión logística 
@@ -54,8 +54,8 @@ Para tener menor sesgos en las estimaciones se probó cada método con la valida
 Al ejecutar los métodos, el método Xgboost, es el que logra clasificar el modelo de mejor manera, ya que tanto el recall y la precisión son altos, ademas viendo las gráfica de las métricas de clasificación son mejores comparados con los demás modelos. En el tiempo de ajuste del estimador si es un poco más alto con respecto a los demás, sin embargo la diferencia no es tan grande. También se ejecuto el método SVM, sin embargo sus tiempos de ejecución eran muy altos y las métricas no eran muy buenas.
 
 <div style="text-align:center">
-  <img src="https://github.com/marcelamu9/modelo_predictivo_fuga_colombina/blob/main/img/boxplot_metricas_clasificacion.png" width="800" title="Métricas de clasificación">
-  <img src="https://github.com/marcelamu9/modelo_predictivo_fuga_colombina/blob/main/img/boxplot_tiempos_modelos.png" width="800" title="Tiempos de modelos">
+  <img src="img/boxplot_metricas_clasificacion.png" width="800" title="Métricas de clasificación">
+  <img src="img/boxplot_tiempos_modelos.png" width="800" title="Tiempos de modelos">
 </div>
 
 Al realizar las métricas en los datos de entrenamiento y prueba se encontró que las métricas de precisión y recall son muy buenas en los datos de entrenamiento, sin embargo la precisión no es tan buena en los datos de prueba, la idea en los futuros modelos será aumentar la precisión para identificar correctamente los clientes fugados.
@@ -63,7 +63,7 @@ Al realizar las métricas en los datos de entrenamiento y prueba se encontró qu
 Se realizó el gráfico para medir la importancia de las variables en el modelo, donde se tiene que la variable longitud es la más importante para el modelo y las otras variables tienen poco peso, así que es conveniente en una próximo modelo evaluar otras variables o descartar algunas de las variables ya incluidas.
 
 <div style="text-align:center">
-  <img src="https://github.com/marcelamu9/modelo_predictivo_fuga_colombina/blob/main/img/importancia_variables.png" width="800" title="importancia variables">
+  <img src="img/importancia_variables.png" width="800" title="importancia variables">
 </div>
 <br>
 
